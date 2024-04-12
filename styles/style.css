@@ -1,0 +1,325 @@
+/* common styles  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+
+.text-light-gray {
+  color: #727272;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.6rem;
+}
+.btn-pry {
+  font-size: 1.25rem;
+  font-weight: 600;
+  border-radius: 8px;
+  background: #ff900e;
+  padding: 1.25rem 1.5rem;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+}
+.section-title {
+  columns: #727272;
+}
+main {
+  width: 80%;
+  margin: 0 auto;
+}
+.section-title {
+  color: #131313;
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+/* header section start  */
+header {
+  padding: 20px 220px;
+  background-color: rgba(255, 144, 14, 0.1);
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 115px;
+}
+.nav ul {
+  display: flex;
+}
+.nav > h1 {
+  font-size: 2.7rem;
+  font-weight: 700;
+  color: #131313;
+}
+.nav ul li {
+  margin-right: 40px;
+  color: #424242;
+  list-style: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.banner-info {
+  text-align: center;
+}
+.banner-title {
+  font-size: 4rem;
+  color: #131313;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+}
+.banner-info .text-light-gray {
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  width: 90%;
+}
+.banner-info .btn-pry {
+  margin-bottom: 3.5rem;
+}
+.banner-info img {
+  width: 100%;
+}
+/* feature section start  */
+.feature-container {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 100px auto;
+}
+.feature-imgs-container {
+  display: grid;
+  width: 47%;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+.feature-imgs-container img {
+  width: 100%;
+}
+.feature-info {
+  width: 47%;
+}
+.feature-section-title {
+  font-size: 2.8rem;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+.feature-section-title .light-gray {
+  color: #727272;
+}
+.feature-section-title .feature-color {
+  color: #ff900e;
+}
+.feature-container .text-light-gray {
+  margin-bottom: 24px;
+}
+
+/* experience section start  */
+.experience-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.experience-info {
+  width: 45%;
+  height: auto;
+}
+.experience-img {
+  width: 45%;
+}
+.experience-img img {
+  width: 100%;
+  height: 100%;
+}
+.experinece-about {
+  margin-bottom: 30px;
+}
+.experience-section .section-title {
+  border-left: 5px solid #ff900e;
+  padding-left: 5px;
+  margin-bottom: 10px;
+}
+.experience-section .experience-card {
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+  margin-bottom: 20px;
+  padding: 20px;
+}
+.experience-card h3 {
+  font-size: 1.25rem;
+  color: #131313;
+  margin-bottom: 10px;
+}
+.year-card {
+  height: 200px;
+  width: 300px;
+  border-radius: 8px;
+  background: #ff900e;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -100px;
+  right: 60px;
+}
+.yr-title {
+  font-size: 3.8rem;
+  text-align: center;
+}
+.yr-mini-title {
+  font-size: 1.5rem;
+  text-align: center;
+}
+/* facts section start */
+.facts-container {
+  margin-top: 50px;
+}
+.fact-about .text-light-gray {
+  width: 600px;
+  margin: 20px 0px;
+}
+.fact-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  margin-top: 50px;
+}
+.fact-card img {
+  margin: 60px 0 0 0;
+}
+.fact-card .card {
+  text-align: center;
+  border-radius: 8px;
+  border: 1px solid #ff900e;
+  height: 240px;
+  width: 220px;
+}
+/* spnosors section start */
+
+.sponsor-container{
+  margin: 100px 0;
+  text-align: center;
+}
+.sponsor-title .text-light-gray{
+width: 600px;
+margin: 20px auto 30px;
+}
+.sponsor-img-container img{
+  width: 150px;
+  margin: 0 30px;
+}
+/* footer section start */
+footer{
+  height: 100px;
+  text-align: center;
+  border-radius: 8px;
+background: #FFF4E7;
+width: 80%;
+margin: 30px auto 0 ;
+}
+footer p{
+  padding-top: 40px;
+}
+
+
+/* responsive design  */
+/* smaller device */
+@media screen and (max-width: 576px) {
+  main {
+    width: 90%;
+  }
+  header,
+  .feature-containe,
+  .experience-section {
+    padding: 10px;
+  }
+  .nav,
+  .feature-container,
+  .experience-section {
+    flex-direction: column;
+  }
+  .nav {
+    margin-bottom: 30px;
+  }
+  .nav ul {
+    justify-content: space-around;
+  }
+  .nav ul li {
+    margin: 20px 10px;
+  }
+
+  .feature-container div,
+  .experience-info,
+  .experience-img {
+    width: 100%;
+    margin: 20px 0;
+  }
+  .experience-section {
+    padding: 0;
+  }
+  .experience-info,
+  .experience-img {
+    padding: 0;
+  }
+  .year-card {
+    position: static;
+    margin: 20px auto;
+  }
+  .fact-about .text-light-gray {
+    width: 100%;
+  }
+
+  .fact-card-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .sponsor-title .text-light-gray{
+    width: 100%;
+  }
+  .sponsor-img-container img{
+    margin: 20px ;
+  }
+  footer{
+    width: 100%;
+    padding: 10px;
+    
+  }
+  footer p{
+    padding-top: 20px;
+  }
+}
+
+/* medium device */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .nav,
+  .experience-section {
+    flex-direction: column;
+  }
+  .nav ul li {
+    margin: 20px 10px;
+  }
+  .experience-info {
+    width: 90%;
+  }
+  .year-card {
+    position: static;
+    margin: 20px auto;
+  }
+  .fact-about .text-light-gray {
+    width: 100%;
+  }
+  .fact-card-container {
+    gap: 15px;
+  }
+  footer{
+    width: 100%;
+    
+  }
+}
